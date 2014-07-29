@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E324A1B3-3D71-4599-9E74-0C89DA07C9C6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GMScan</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF38E236-BF3C-41AF-AC0A-819F61FB10D8</key>
+		<string>https://github.com/TeamOfFBAuto/FBIOSTEAMAPI.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GMScan/GMScan.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF38E236-BF3C-41AF-AC0A-819F61FB10D8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TeamOfFBAuto/FBIOSTEAMAPI.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF38E236-BF3C-41AF-AC0A-819F61FB10D8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF38E236-BF3C-41AF-AC0A-819F61FB10D8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FBIOSTEAMAPI</string>
+		</dict>
+	</array>
+</dict>
+</plist>
