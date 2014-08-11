@@ -10,7 +10,8 @@
 #import "RootViewController.h"
 #import "ScanResultViewController.h"
 
-#define ScanKuangFrame CGRectMake(50, 70+89, 220, 220)
+#define ScanKuangFrame CGRectMake(50, 70+89, 220, 220)//扫描框的frame
+#define CameraFrame CGRectMake(0,0,320,568);//相机frame
 
 @interface GscanfViewController ()
 
@@ -29,11 +30,21 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+
+    //上面的功能按钮
+    UIView *upView = [[UIView alloc]initWithFrame:CGRectMake(0, 20, 320, 44)];
+    upView.backgroundColor = [UIColor orangeColor];
+    //返回按钮
+    UIButton *bbtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    bbtn.frame = CGRectMake(0, 0, 60, 44);
+    [bbtn setTitle:@"返回" forState:UIControlStateNormal];
+    [bbtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    [upView addSubview:bbtn];
+    [self.view addSubview:upView];
     
-    self.navigationItem.title = @"二维码";
     
     //半透明的浮层
-    UIImageView *backImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 64+5.4, 320, 568-64-6)];
+    UIImageView *backImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 64, 320, 568-64)];
     backImageView.image = [UIImage imageNamed:@"saoyisao_bg_640_996.png"];
     [self.view addSubview:backImageView];
  
@@ -45,7 +56,6 @@
     
     
     //文字提示label
-    
     UILabel *tishiLabel = [[UILabel alloc]initWithFrame:CGRectMake(imageView.frame.origin.x, CGRectGetMaxY(imageView.frame)+28, imageView.frame.size.width, 12)];
     tishiLabel.font = [UIFont systemFontOfSize:12];
     tishiLabel.textColor = [UIColor whiteColor];
@@ -75,8 +85,7 @@
     
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(animation1) userInfo:nil repeats:YES];
     
-    
-    //    [timer fire];
+    [timer fire];
     
     
 }
@@ -143,32 +152,26 @@
     {
         [_session addInput:self.input];
     }
-    
     if ([_session canAddOutput:self.output])
     {
         [_session addOutput:self.output];
     }
-    
     // 条码类型 AVMetadataObjectTypeQRCode
     _output.metadataObjectTypes =@[AVMetadataObjectTypeQRCode];
     
     // Preview
     _preview =[AVCaptureVideoPreviewLayer layerWithSession:self.session];
     _preview.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    
-    //_preview.frame =CGRectMake(20,110,280,280);
-    _preview.frame = CGRectMake(0, 0, 320, 568);
-    
+    _preview.frame = CameraFrame;
     [self.view.layer insertSublayer:self.preview atIndex:0];
-    
-    
-    
-    
     
     // Start
     [_session startRunning];
 }
+
+
 #pragma mark AVCaptureMetadataOutputObjectsDelegate
+//扫一扫完成之后的回调
 - (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
 {
     
@@ -185,19 +188,20 @@
     
     
     
+    //如果是模态视图的话 模态视图消失之后推到扫一扫结果web页面
+    [self dismissViewControllerAnimated:YES completion:^
+     {
+         [timer invalidate];
+         NSLog(@"123");
+         NSLog(@"%@",stringValue);
+         
+         [self.delegete pushWebViewWithStr:stringValue];
+      
+     }];
     
-//    [self dismissViewControllerAnimated:YES completion:^
-//     {
-//         [timer invalidate];
-//         NSLog(@"123");
-//         NSLog(@"%@",stringValue);
-//         
-//         [self.delegete pushWebViewWithStr:stringValue];
-//      
-//     }];
     
-    
-    [self.navigationController pushViewController:[[ScanResultViewController alloc]init] animated:YES];
+//    //如果是navigation的话无法在返回上一个vc之后再推到扫一扫结果web页面
+//    [self.navigationController pushViewController:[[ScanResultViewController alloc]init] animated:YES];
     
     
     

@@ -45,12 +45,20 @@
 -(void)saoyisao{
     GscanfViewController *gscanf = [[GscanfViewController alloc]init];
     gscanf.delegete = self;
-    [self.navigationController pushViewController:gscanf animated:YES];
+    
+    //push
+//    [self.navigationController pushViewController:gscanf animated:YES];
+    
+    //模态
+    [self presentViewController:gscanf animated:YES completion:^{
+        
+    }];
 }
 
 
 #pragma mark - 扫完后的回调
 -(void)pushWebViewWithStr:(NSString *)stringValue{
+    
     NSLog(@"%s",__FUNCTION__);
     
     NSLog(@"%@",stringValue);
