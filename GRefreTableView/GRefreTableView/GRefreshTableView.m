@@ -6,7 +6,7 @@
 //  Copyright (c) 2013年 lanou. All rights reserved.
 //
 
-#import "RefreshTableView.h"
+#import "GRefreshTableView.h"
 
 //创建此类时,自动创建下拉刷新headerView,只有当判断有更多数据时,使用者去调用创建footerView方法
 
@@ -209,7 +209,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-
+    
     static NSString *cellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == Nil) {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E345BE391999FDC800084875 /* GRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E345BE381999FDC800084875 /* GRefreshTableView.m */; };
 		E3A73FEC19986EE700C49CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A73FEB19986EE700C49CC6 /* Foundation.framework */; };
 		E3A73FEE19986EE700C49CC6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A73FED19986EE700C49CC6 /* CoreGraphics.framework */; };
 		E3A73FF019986EE700C49CC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3A73FEF19986EE700C49CC6 /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		E3A7400F19986EE700C49CC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3A7400D19986EE700C49CC6 /* InfoPlist.strings */; };
 		E3A7401119986EE700C49CC6 /* GRefreTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A7401019986EE700C49CC6 /* GRefreTableViewTests.m */; };
 		E3A7401C19986EF700C49CC6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A7401B19986EF700C49CC6 /* RootViewController.m */; };
-		E3A7401F19986F9600C49CC6 /* RefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A7401E19986F9600C49CC6 /* RefreshTableView.m */; };
 		E3A740291998700200C49CC6 /* bluedown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A740211998700200C49CC6 /* bluedown@2x.png */; };
 		E3A7402A1998700200C49CC6 /* blueup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E3A740221998700200C49CC6 /* blueup@2x.png */; };
 		E3A7402B1998700200C49CC6 /* EGORefreshTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A740241998700200C49CC6 /* EGORefreshTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -40,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E345BE371999FDC800084875 /* GRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRefreshTableView.h; sourceTree = "<group>"; };
+		E345BE381999FDC800084875 /* GRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRefreshTableView.m; sourceTree = "<group>"; };
 		E3A73FE819986EE700C49CC6 /* GRefreTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GRefreTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3A73FEB19986EE700C49CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E3A73FED19986EE700C49CC6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,8 +60,6 @@
 		E3A7401019986EE700C49CC6 /* GRefreTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRefreTableViewTests.m; sourceTree = "<group>"; };
 		E3A7401A19986EF700C49CC6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E3A7401B19986EF700C49CC6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		E3A7401D19986F9600C49CC6 /* RefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshTableView.h; sourceTree = "<group>"; };
-		E3A7401E19986F9600C49CC6 /* RefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshTableView.m; sourceTree = "<group>"; };
 		E3A740211998700200C49CC6 /* bluedown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bluedown@2x.png"; sourceTree = "<group>"; };
 		E3A740221998700200C49CC6 /* blueup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueup@2x.png"; sourceTree = "<group>"; };
 		E3A740231998700200C49CC6 /* EGORefreshTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFooterView.h; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 				E3A73FFB19986EE700C49CC6 /* AppDelegate.m */,
 				E3A7401A19986EF700C49CC6 /* RootViewController.h */,
 				E3A7401B19986EF700C49CC6 /* RootViewController.m */,
-				E3A7401D19986F9600C49CC6 /* RefreshTableView.h */,
-				E3A7401E19986F9600C49CC6 /* RefreshTableView.m */,
+				E345BE371999FDC800084875 /* GRefreshTableView.h */,
+				E345BE381999FDC800084875 /* GRefreshTableView.m */,
 				E3A7402E199872AA00C49CC6 /* GmPrepareNetData.h */,
 				E3A7402F199872AA00C49CC6 /* GmPrepareNetData.m */,
 				E3A740201998700200C49CC6 /* EGORefresh */,
@@ -287,11 +287,11 @@
 			files = (
 				E3A7402C1998700200C49CC6 /* EGORefreshTableHeaderView.m in Sources */,
 				E3A74030199872AA00C49CC6 /* GmPrepareNetData.m in Sources */,
+				E345BE391999FDC800084875 /* GRefreshTableView.m in Sources */,
 				E3A73FFC19986EE700C49CC6 /* AppDelegate.m in Sources */,
 				E3A73FF819986EE700C49CC6 /* main.m in Sources */,
 				E3A7401C19986EF700C49CC6 /* RootViewController.m in Sources */,
 				E3A7402B1998700200C49CC6 /* EGORefreshTableFooterView.m in Sources */,
-				E3A7401F19986F9600C49CC6 /* RefreshTableView.m in Sources */,
 				E3A7402D1998700200C49CC6 /* GloadingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +489,7 @@
 				E3A7401619986EE700C49CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3A7401719986EE700C49CC6 /* Build configuration list for PBXNativeTarget "GRefreTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +498,7 @@
 				E3A7401919986EE700C49CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

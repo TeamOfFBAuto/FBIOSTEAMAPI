@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RefreshTableView.h"
+#import "GRefreshTableView.h"
 
 @interface RootViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,RefreshDelegate>
 {
