@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2AA7688B-69FE-4DCE-967E-83D6F61DA0C7</string>
+	<string>3FBD1BA3-6013-4D8D-BB45-3E463695DB88</string>
 	<key>IDESourceControlProjectName</key>
 	<string>XTSideMenuDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BCAA3E1B-712C-42EB-9476-11BE2BA7D3CC</key>
-		<string>https://github.com/xushao1990/XTSideMenu.git</string>
+		<key>04582546-707E-479E-A913-D693B34C3A84</key>
+		<string>https://github.com/TeamOfFBAuto/FBIOSTEAMAPI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XTSideMenuDemo/XTSideMenuDemo.xcodeproj/project.xcworkspace</string>
+	<string>XTSideMenu-master/XTSideMenuDemo/XTSideMenuDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BCAA3E1B-712C-42EB-9476-11BE2BA7D3CC</key>
-		<string>../../..</string>
+		<key>04582546-707E-479E-A913-D693B34C3A84</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/xushao1990/XTSideMenu.git</string>
+	<string>https://github.com/TeamOfFBAuto/FBIOSTEAMAPI.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BCAA3E1B-712C-42EB-9476-11BE2BA7D3CC</string>
+	<string>04582546-707E-479E-A913-D693B34C3A84</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BCAA3E1B-712C-42EB-9476-11BE2BA7D3CC</string>
+			<string>04582546-707E-479E-A913-D693B34C3A84</string>
 			<key>IDESourceControlWCCName</key>
-			<string>XTSideMenu</string>
+			<string>FBIOSTEAMAPI</string>
 		</dict>
 	</array>
 </dict>
